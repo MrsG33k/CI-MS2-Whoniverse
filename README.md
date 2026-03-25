@@ -1,8 +1,11 @@
-# Where in the Whoniverse?
+# Milestone 2: Where in the Whoniverse?
 
 👩🏻‍💻 View an example of this section [here](https://github.com/kera-cudmore/Bully-Book-Club#bully-book-club-website)
 
-Add a Blurb about the site here, what does it do, why did you build it?
+Welcome to Where in the Whoniverse? 
+This is an interactive front-end project using HTML, CSS and Javascript developed as part of the Code Institute Level 5 Diploma in Web Application Development.
+
+The purpose of this website is to provide an interactive, location guessing game based on the BBC Series Doctor Who. The website will challenge users to identify iconic filming locations across the Earth powered by real world map data. 
 
 Add an image of the finished site here. I like to use [amiresponsive](https://ui.dev/amiresponsive) to get an image of my site on all device sizes, and amiresponsive allows you to click links on the page and scroll, so each device can show a different element of your site.
 
@@ -54,7 +57,21 @@ If you want to add optional [shields.io](https://shields.io) badges to your READ
 
 ### User Stories
 
-Add your user stories here. You want to include first time visitors and returning visitors here as a minimum. Think about each group, and the experience and journey you want them to have on your site. It really helps to think about this before you start coding, and will really help with creating your wireframes.
+#### First Time Visitor goals
+* As a First Time Visitor, I want to see a clear 'How to Play' guide when the page loads so that I can understand the game mechanics before starting my first round.
+
+* As a First Time Visitor, I want to be able to easily identify the guess map and the 'Submit' button so that I can play the game without confusion.
+
+* As a First Time Visitor accessing the site on my phone, I want the interface to stack vertically so that all the interactive elements remain accessible and nothing is obscured.
+
+* As a First Time Visitor, I want to see a summary of my distance from the target and a calculated score after each guess. 
+
+#### Returning Visitor goals
+* As a Returning Visitor, I want a 'Play again' button that resets the game stateand picks a new random location.
+
+* As a Returning Visitor, I want the game to remember my "Best Guess" (closest distance) from previous sessions so that I have a personal record to beat.
+
+* As a Returning Visitor, I want the game to remember my "Theme" settings so that the app feels personalised to me every time I return.
 
 ## Design
 
@@ -83,12 +100,60 @@ I also like to include an image of the fonts chosen as a reference.
 Use this section to explain what sort of imagery you plan to use through your site.
 
 ### Wireframes
+Wireframes were created using [Canva](https://www.canva.com)
 
-Add the images or links for your wireframes here.
+#### ON PAGE LOAD
 
-There are lots of different options to create your wireframes - Code Institute students can access [Balsamiq](https://balsamiq.com/) as part of the course.
+#### Desktop
+<figure>
+    <img src="assets/images/indexdesktop.png" width='800'
+         alt="Desktop wireframe on page load">
+    <figcaption>This shows how the app will load on desktop with two clear buttons "Start Game" and "How to Play"</figcaption>
+</figure>
 
-Some other options include [Figma](https://www.figma.com/), [AdobeXD](https://www.adobe.com/products/xd.html), [Sketch](https://www.sketch.com/?utm_source=google&utm_medium=cpc&adgroup=uxui&device=c&matchtype=e&utm_campaign=ADDICTMOBILE_SKETCH_GAD_DG_UK_T1_ALWAYS-ON_S_TRF_PROS_BRAND&utm_term=sketch&utm_source=google&utm_medium=cpc&utm_content=TOF_BRND__generic&hsa_acc=8710913982&hsa_cam=16831089317&hsa_grp=134620695759&hsa_ad=592060065319&hsa_src=g&hsa_tgt=kwd-14921750&hsa_kw=sketch&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjwr4eYBhDrARIsANPywCjRIFn93DMezYnsyE5Fic_8l8kynJtut0GYMU01TiohHjwziFtlH0gaAhteEALw_wcB) and [Mockup](https://apps.apple.com/us/app/mockup-sketch-ui-ux/id1527554407) to name just a few! Or you can even go old school and get those wireframes completed using pen and paper. Just snap an image of the completed wireframes to add the images to the README.
+
+
+#### Mobile
+<figure>
+    <img src="assets/images/indexmobile.png" width='300'
+         alt="Mobile wireframe on page load">
+    <figcaption>This shows how the app will load on mobile using vertical stacking with two clear buttons "Start Game" and "How to Play"</figcaption>
+</figure>
+
+
+#### PLAYING THE GAME
+
+#### Desktop
+<figure>
+    <img src="assets/images/gamedesktop.png" width='800'
+         alt="Mobile wireframe on page load">
+    <figcaption>This shows how the app will appear in 'play' mode, with the map on the left and all buttons/scoring on the right"</figcaption>
+</figure>
+
+#### Mobile
+<figure>
+    <img src="assets/images/gamemobile.png" width='300'
+         alt="Mobile wireframe on page load">
+    <figcaption>This shows how the app will appear in 'play' mode" keeping the map on the top of the stack and keeping buttons 'thumb friendly' for users on mobile.</figcaption>
+</figure>
+
+
+#### RESULTS DISPLAY
+#### Desktop
+<figure>
+    <img src="assets/images/resultsdesktop.png" width='800'
+         alt="Mobile wireframe on page load">
+    <figcaption>This shows how the app will appear in 'results' mode, keeping consistent, with the map on the left and all buttons/scoring on the right"</figcaption>
+</figure>
+
+#### Mobile
+<figure>
+    <img src="assets/images/resultsmobile.png" width='300'
+         alt="Mobile wireframe on page load">
+    <figcaption>This shows how the app will appear in 'results' mode" keeping the map on the top of the stack and keeping buttons 'thumb friendly' for users on mobile.</figcaption>
+</figure>
+
+
 
 ## Features
 
