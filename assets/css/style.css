@@ -1,0 +1,181 @@
+/* Reset CSS by Josh W Comeau */
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+/* Custom CSS Styles by Jennie Whittaker */
+
+/* Toggle for Light/Dark Mode */
+:root {
+    /* Light Mode Colors */
+    --background-color: #F4F4F9;
+    --text-color: #063970;
+    --accent-color: #FFD700;
+    --border-color: #000;
+    --button-background: #063970;
+    --header-background: #fff;
+}
+
+[data-theme="dark"] {
+    /* Dark Mode Colors */
+    --background-color: #0B0C10;
+    --text-color: #F0F0F0;
+    --accent-color: #FFD700;
+    --border-color: #fff;
+    --button-background: #1F2833;
+    --header-background: #1F2833;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Landing Page Layout Styles */
+
+.landing-header {
+    border-bottom: 2px solid var(--border-color);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: var(--header-background);
+}
+
+.logo-wrap {
+    width: 60px;
+    height: 60px;
+    border: 2px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.landing-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Landing Image Container */
+.landing-hero-container {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+.image-placeholder {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 2px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ccc; /* Placeholder until image is in place */
+}}
+
+/* Button Styles */
+
+.cta-section {
+    display: flex;
+    gap: 30px;
+}
+
+.btn {
+    padding: 15px 30px;
+    border: 2px solid var(--border-color);
+    text-decoration: none;
+    color var(--text-color);
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    background: var(--button-background)
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--text-color);
+    color: var(--background-color);
+}
+
+/* Footer Styles */
+
+.landing-footer {
+    border-top: 2px solid var(--border-color);
+    padding: 15px;
+    text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+    .cta-section {
+        flex-direction: column;
+        width: 100%
+        max-width: 300px;
+    }
+
+    .btn { 
+        text-align: center;
+    }
+
+}
