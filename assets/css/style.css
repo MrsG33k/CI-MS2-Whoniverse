@@ -59,6 +59,7 @@
     --accent-color: #FFD700;
     --border-color: #000;
     --button-background: #063970;
+    --button-text-color: #fff;
     --header-background: #fff;
     --card-bg: #fff;
 }
@@ -133,7 +134,7 @@ h1 {
     align-items: center;
     justify-content: center;
     background: #ccc; /* Placeholder until image is in place */
-}}
+}
 
 /* Button Styles */
 
@@ -146,10 +147,10 @@ h1 {
     padding: 15px 30px;
     border: 2px solid var(--border-color);
     text-decoration: none;
-    color var(--text-color);
+    color: var(--button-text-color);
     font-weight: bold;
     font-family: 'Orbitron', sans-serif;
-    background: var(--button-background)
+    background: var(--button-background);
     cursor: pointer;
     transition: 0.3s;
 }
@@ -200,7 +201,7 @@ h1 {
 @media (max-width: 768px) {
     .cta-section {
         flex-direction: column;
-        width: 100%
+        width: 100%;
         max-width: 300px;
     }
 
