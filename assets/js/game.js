@@ -5,6 +5,10 @@ let allLocations = [];
 let currentLocation = null;
 let score = 0;
 let round = 1;
+let map;
+let userMarker = null;
+let userGuessCoords = null;
+let usedLocationIndexes = [];
 
 //Fetch the data
 async function loadGameData() {
@@ -21,8 +25,15 @@ async function loadGameData() {
 
 //Start The Game
 function startGame(){
+    //prevent the user from seeing the same location more than once
+    let randomIndex;
+    do {
+        randomIndex = Math.floor(Math.random() * allLocations.length);
+    //Checks that the location pick hasn't already been used and that there are still new locations left.
+    } while (usedLocationIndexes.includes(randomIndex) && usedLocationIndexes.length < allLocations.length);
+    //adds the picked location to the array to prevent it being picked next time
+    usedLocationIndexes.push(randomIndex);
     //pick a random location
-    const randomIndex = Math.floor(Math.random() * allLocations.length);
     currentLocation = allLocations[randomIndex];
     updateDisplay();
 }
@@ -38,14 +49,54 @@ function updateDisplay(){
         roundTxt.innerText = `${round} of 5`;
     }
 }
+//Function to detect and stop the game after 5 rounds
+function nextRound(){
+    if (round < 5) {
+        round++;
+        //resets the map / marker between rounds
+        if(userMarker) {
+            map.removeLayer(userMarker);
+            userMarker = null;
+            userGuessCoords = null;
+        }
+        //reset map
+        map.setView([51.4730, -3.150],16);
+
+        //update score
+        document.getElementById('currentScore').innerText = score;
+
+        //Restart the game
+        startGame();
+
+    } else {
+        //If we've reached 5 - it's game over
+        showGameOver();
+    }
+}
+
+function showGameOver() {
+    const resultTitle = document.getElementById('result-title');
+    const resultText = document.getElementById('result-text');
+    const nextBtn = document.getElementById('next-round-btn');
+
+    resultTitle.innerText = "Timeline Stabilised!";
+    resultText.innerText = `<h3>Final Score: ${score}</h3> You've successfully navigated the Whoniverse! FANTASTIC! </p>`;
+
+    //update the button to start a new game
+    nextBtn.innerText = "Play Again?";
+    nextBtn.onclick = () => {
+        window.location.reload();
+    };
+
+    document.getElementById('result-modal').style.display = 'block';
+
+}
 
 //Run game on page load
 window.onload = loadGameData;
 
 // THE GAME - Loading the map
-let map;
-let userMarker = null;
-let userGuessCoords = null;
+
 
 function initMap(){
     //loads the map - scheduled to default to Bad Wolf Studios Cardiff
