@@ -52,6 +52,40 @@
     <footer class ="landing-footer">
         <p>&copy; 2026 Where in the Whoniverse? All rights reserved.</p>
     </footer>
+
+    <div id="result-modal" class="modal">
+        <div class="modal-content result-content">
+            <h2 id="modal-title">Time-Space Calculations Complete</h2>
+            <hr>
+            <p id="result-text"></p>
+            <div class="result-stats">
+                <p><strong>Distance Away: </strong><span id="dist-display"></span> km</p>
+                <p><strong>Points Earned: </strong><span id="points-display"></span></p>
+                <br>
+            </div>
+            <button id="next-round-btn" class="btn"> Next Location</button>
+        </div>
+    </div>
+
+    <div id="hint-modal" class="modal">
+        <div class="modal-content hint-content">
+            <h2 id="modal-title"> Sonic Scan Results</h2>
+            <hr>
+            <p id="hint-text"></p>
+            <br>
+            <button id="close-hint-btn" class="btn btn-secondary">Close Hint</button>
+        </div>
+    </div>
+
+    <div id = "error-modal" class="modal">
+        <div class="modal-content result-content">
+            <h2 id="modal-title">Geronimo!</h2>
+            <hr>
+            <p id="result-text">We can't land the TARDIS without the coordinates! Lock that location into the map first</p>
+            <br>
+            <button id="close-error-btn" class="btn btn-secondary">Return to Map</button>
+        </div>
+    </div>
 <!-- Link to Javascript file -->
     <script src="assets/js/game.js"></script>
 </body>

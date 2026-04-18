@@ -96,18 +96,43 @@ function setupEventListeners(){
                 const distanceInMeters = userGuessCoords.distanceTo(actual);
                 const distanceInKm = (distanceInMeters / 1000).toFixed(2);
 
-                //Give the user feedback on their guess
-                alert(`Travel Complete! You landed ${distanceInKm} km away from ${currentLocation.name}.`);
+                //Calculate a score
+                let points = Math.max(0,5000 - Math.floor(distanceInKm * 5));
+                score += points;
+
+                //Give the user feedback on their guess using the modal
+                document.getElementById('dist-display').innerText = distanceInKm;
+                document.getElementById('points-display').innerText = points;
+                document.getElementById('result-text').innerText = `You were supposed to materialise near ${currentLocation.name}!`;
+
+                document.getElementById('result-modal').style.display = 'block';
             } else {
                 //Gives the user feedback if they submit before clicking on the map.
-                alert("Allonsy! We can't land the TARDIS without the coordinates! Lock that location into the map first")
+                //alert("Allonsy! We can't land the TARDIS without the coordinates! Lock that location into the map first")
+                document.getElementById('error-modal').style.display = 'block';
+
             }
         };
     }
     // If the user clicks the hint button - will load up the hint from the current location.
     if (hintBtn) {
         hintBtn.onclick = () => {
-            alert(`Affirmative Master... Hint: ${currentLocation.hint}`);
+            document.getElementById('hint-text').innerText = currentLocation.hint;
+            document.getElementById('hint-modal').style.display = 'block';
+        }
+    }
+    //Waits for user to close the hint button
+    const closeHintBtn = document.getElementById('close-hint-btn');
+    if(closeHintBtn) {
+        closeHintBtn.onclick = () => {
+            document.getElementById('hint-modal').style.display = 'none';
+        }
+    }
+    //waits for user to close the error button
+    const closeErrorBtn = document.getElementById('close-error-btn');
+    if(closeErrorBtn) {
+        closeErrorBtn.onclick = () => {
+            document.getElementById('error-modal').style.display = 'none';
         }
     }
 }

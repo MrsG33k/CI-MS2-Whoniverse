@@ -169,6 +169,9 @@ This section can be used to explain what pages your site is made up of.
 If there is a feature that appears on all pages of your site, include it here. Examples of what to include would the the navigation, a footer and a favicon.
 
 I then like to add a screenshot of each page of the site here, i use [amiresponsive](https://ui.dev/amiresponsive) which allows me to grab an image of the site as it would be displayed on mobile, tablet and desktop, this helps to show the responsiveness of the site.
+#### Game.html
+
+To enhance the thematic immersion, I replaced the default Leaflet marker with a custom TARDIS-pin SVG. I adjusted the iconAnchor properties to ensure the 'landing' point of the TARDIS correctly aligns with the user's geographic coordinates.
 
 ### Future Implementations
 
@@ -219,6 +222,8 @@ A great tip for this section is to include them as you use them, that way you wo
 * [Photopea](https://www.photopea.com/) - Used to edit and create graphics for the project
 
 * [Favicon.io](https://favicon.io/) - Used to create the favicon based on the logo
+
+* [Leaflet.js](https://leafletjs.com/) - Used to create the map and manage user input to the map
 
 
 ## Deployment & Local Development
