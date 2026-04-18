@@ -247,7 +247,7 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 | No | Feature | Issue | Fix |
 | :--- | :--- | :--- | :--- |
 | 1 | Landing page | The buttons on the landing page had the same BG and text colour rendering the button text unviewable in its current state. <img src="assets/images/bug1colourcontrastbuttons.webp" align="left" alt="Screenshot of blue buttons with text same colour" width="200"> | Updated root values in CSS style to add a button text color of white to contrast the Tardis blue. |
-
+| 2 | Logo | When adding the logo to the placeholder, it appeared to be displaying with a black border on it. <img src="assets/images/bug2logoborder.webp" align="left" alt="Screenshot of TARDIS logo with black border." width="150"> | Needed to tweak the CSS code to remove the 2px border that was originally added for the logo placeholder text. |
 
 
 ## Credits
