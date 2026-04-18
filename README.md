@@ -42,6 +42,9 @@ If you want to add optional [shields.io](https://shields.io) badges to your READ
     * [How to Clone](#how-to-clone)
 
 * [Testing](#testing)
+  * [Solved Bugs](#solved-bugs)
+  * [Known Bugs](#known-bugs)
+
 
 * [Credits](#credits)
   * [Code Used](#code-used)
@@ -199,6 +202,18 @@ Make sure to include things like git, GitHub, the program used to make your wire
 
 A great tip for this section is to include them as you use them, that way you won't forget what you ended up using when you get to the end of your project.
 
+* [Canva](https://www.canva.com/online-whiteboard/wireframes/) - Used to create wireframes.
+
+* [Git](https://git-scm.com/) - For version control.
+
+* [Github](https://github.com/) - To save and store the files for the website.
+
+* [VS Code](https://code.visualstudio.com/) - IDE used to create the site.
+
+* [Google Fonts](https://fonts.google.com/) - Google fonts were used to import the 'Orbitron' and the 'Roboto' font into the project.
+
+* [To WebP](https://towebp.io/) - Used to convert images to WebP format.
+
 ## Deployment & Local Development
 
 👩🏻‍💻 View an example of a completed Deployment & Local Development section [here](https://github.com/kera-cudmore/TheQuizArms#Deployment)
@@ -220,12 +235,15 @@ Place instructions on how to fork your project here.
 Place instructions on how to clone your project here.
 
 ## Testing
+Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 
-Start as you mean to go on - and get used to writing a TESTING.md file from the very first project!
+### Solved Bugs
 
-Testing requirements aren't massive for your first project, however if you start using a TESTING.md file from your first project you will thank yourself later when completing your later projects, which will contain much more information.
-  
-Use this part of the README to link to your TESTING.md file - you can view the example TESTING.md file [here](milestone1-testing.md)
+| No | Feature | Issue | Fix |
+| :--- | :--- | :--- | :--- |
+
+
+
 
 ## Credits
 
