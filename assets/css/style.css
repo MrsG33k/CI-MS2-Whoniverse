@@ -162,6 +162,16 @@ h1 {
 .btn:hover {
     background: var(--text-color);
     color: var(--background-color);
+    background-color: var(--accent-color);
+    color:000;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+    transition: all 0.3 ease;
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 10px rgba(255, 215, 0, 0.3);
 }
 
 /* How to Play Modal */
