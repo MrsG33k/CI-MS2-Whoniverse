@@ -133,12 +133,11 @@ h1 {
 
 .image-placeholder {
     width: 100%;
-    aspect-ratio: 16 / 9;
-    border: 2px solid var(--border-color);
+    max-width: 800px;
+    margin: 10px auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #ccc; /* Placeholder until image is in place */
 }
 
 /* Button Styles */
