@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Westminister Bridge",
-    "image": "assets/images/scenes/location1.jpg",
+    "image": "/assets/images/scenes/location1.webp",
     "coords": { "lat": 51.5008659362793, "lng": -0.12243890017271042},
     "hint": "The invaders glide toward the heart of British law, where a famous bell tolls but never speaks.",
     "fact": "Seen in: Dalek invasion of Earth: To capture those eerie shots of a deserted London, the production team had to film at the crack of dawn on a Sunday morning."
@@ -10,15 +10,15 @@
   {
     "id": 2,
     "name": "The Roald Dahl Plass Water Tower",
-    "image": "assets/images/scenes/location2.jpg",
+    "image": "/assets/images/scenes/location2.webp",
     "coords": { "lat": 51.46391457304263, "lng": -3.164153135426584 },
     "hint": "Located in the rejuvenated Cardiff Bay, this 70-foot steel monolith stands guard over the Welsh Parliament.",
     "fact": "Seen in: Boom Town & Torchwood - To keep the 'top-secret' vibe of Torchwood, the crew had to use large mirrors and clever camera angles to hide the hundreds of Cardiff locals who were standing just inches outside the frame"
   },
   {
     "id": 3,
-    "name": "The Roald Dahl Plass Water Tower",
-    "image": "assets/images/scenes/location3.jpg",
+    "name": "Bodiam Castle",
+    "image": "/assets/images/scenes/location3.webp",
     "coords": { "lat": 51.46391457304263, "lng": -3.164153135426584 },
     "hint": "Located in East Sussex, this moated marvel was built to defend against a French invasion, but in 1983, the threat came from the stars.",
     "fact": "Seen in The King's Demons: - Bodiam is famous for being a 'hollow' castle—the interior is largely in ruins, while the exterior is perfectly preserved. This is why almost all the interior shots in The King’s Demons had to be filmed back at BBC Television Centre on sets, as the real castle didn't have enough 'rooms' left to house a King!"
@@ -27,7 +27,7 @@
   {
     "id": 4,
     "name": "St Paul's Cathedral",
-    "image": "assets/images/scenes/location4.jpg",
+    "image": "/assets/images/scenes/location4.webp",
     "coords": { "lat": 51.5137872, "lng": -0.0984506 },
     "hint": "Cybermen don't usually do sightseeing, but in 1968 and 2014, they marched down the steps of this Christopher Wren masterpiece.",
     "fact": "Seen in The Invasion: - During the 1968 filming of The Invasion, the Cybermen were actually just actors in suits who had to hide in the back of a van between takes because the production didn't have permission to film with 'monsters' in public view!"
@@ -36,7 +36,7 @@
   {
     "id": 5,
     "name": "Bad Wolf Bay",
-    "image": "assets/images/scenes/location5.jpg",
+    "image": "/assets/images/scenes/location5.webp",
     "coords": { "lat": 51.44607592570287, "lng": -3.6061000284636346 },
     "hint": "Known to locals as Dunraven Bay, but known to the universe as the place where a Doctor and a Blonde once said a final, heartbreaking goodbye.",
     "fact": "Seen in Doomsday: - While it's Bad Wolf Bay in Norway on screen, the beach is actually in Wales. The production crew chose it because the unique rock formations look alien but the tide goes out far enough to allow for long, dramatic walks."
@@ -45,7 +45,7 @@
   {
     "id": 6,
     "name": "The London Eye",
-    "image": "assets/images/scenes/location6.jpg",
+    "image": "/assets/images/scenes/location6.webp",
     "coords": { "lat": 51.503279808301116, "lng": -0.11942300683074336 },
     "hint": "In 2005, this giant wheel wasn't just a tourist attraction—it was a massive transmitter for the Nestene Consciousness",
     "fact": "Seen in Rose: - This was the first major London landmark featured in the New Who revival. To save money, the Doctor and Rose were edited into shots of the Eye rather than the production hiring the whole wheel for a night."
@@ -54,7 +54,7 @@
   {
     "id": 7,
     "name": "The Gherkin",
-    "image": "assets/images/scenes/location7.jpg",
+    "image": "/assets/images/scenes/location7.webp",
     "coords": { "lat": 51.514497, "lng": -0.0803325 },
     "hint": "A spaceship crashed through this glass skyscraper during a Sycorax invasion on Christmas Day.",
     "fact": "Seen in The Wedding of River Song: - The building’s distinct shape earned it the nickname 'The Gherkin'"
@@ -63,7 +63,7 @@
   {
     "id": 8,
     "name": "Stonehenge",
-    "image": "assets/images/scenes/location8.jpg",
+    "image": "/assets/images/scenes/location8.webp",
     "coords": { "lat": 51.1788293, "lng": -1.826183},
     "hint": "The ultimate prison for the 11th Doctor, located beneath these ancient standing stones in an episode titled 'The Pandorica Opens'.",
     "fact": "Seen in The Pandorica Opens: - Because Stonehenge is a protected site, the crew could only film close-ups there. They built a full-size 'Foamhenge' replica in a nearby field for the action scenes and pyrotechnics!"
@@ -72,7 +72,7 @@
   {
     "id": 9,
     "name": "Llandaff Village Green",
-    "image": "assets/images/scenes/location9.jpg",
+    "image": "/assets/images/scenes/location9.webp",
     "coords": { "lat": 51.4954546, "lng": -3.2194733},
     "hint": "The heart of a fictional village called Leadworth, where a young girl waited twelve years for a 'Raggedy Man' to return.",
     "fact": "Seen in The Eleventh Hour: - This is where we first met Amy Pond. The production team chose Llandaff because it feels like a 'timeless' English village, even though it’s actually a suburb of Cardiff."
@@ -81,7 +81,7 @@
     {
     "id": 10,
     "name": "Snowdonia",
-    "image": "assets/images/scenes/location10.jpg",
+    "image": "/assets/images/scenes/location10.webp",
     "coords": { "lat": 53.115098, "lng": -4.119494},
     "hint": "These craggy peaks in North Wales were 'chilled' by production to stand in for the high-altitude home of a lonely monastery and a mechanical yeti",
     "fact": "Seen in The Abominable Snowman: - The Yeti costumes used in Snowdonia were made of thick, shaggy faux fur that looked great on screen but was a nightmare for the actors inside. Because the weather in Wales wasn't actually 'Himalayan cold' during filming, the actors were sweating profusely."

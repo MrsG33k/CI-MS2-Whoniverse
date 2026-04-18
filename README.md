@@ -190,6 +190,8 @@ Code Institute have an amazing channel for all things accessibility (a11y-access
 
 👩🏻‍💻 View an example of a completed Technologies Used section [here](https://github.com/kera-cudmore/Bully-Book-Club#Technologies-Used)
 
+I chose to use Native JavaScript (ES6+) over JQuery to ensure high performance, reduce external dependencies, and demonstrate a deeper understanding of DOM manipulation and asynchronous programming
+
 ### Languages Used
 
 Make a note here of all the languages used in creating your project. For the first project this will most likely just be HTML & CSS.
@@ -242,13 +244,14 @@ Place instructions on how to clone your project here.
 ## Testing
 Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 
-### Solved Bugs
+### Solved Bugs / Issues
 
 | No | Feature | Issue | Fix |
 | :--- | :--- | :--- | :--- |
 | 1 | Landing page | The buttons on the landing page had the same BG and text colour rendering the button text unviewable in its current state. <img src="assets/images/bug1colourcontrastbuttons.webp" align="left" alt="Screenshot of blue buttons with text same colour" width="200"> | Updated root values in CSS style to add a button text color of white to contrast the Tardis blue. |
 | 2 | Logo | When adding the logo to the placeholder, it appeared to be displaying with a black border on it. <img src="assets/images/bug2logoborder.webp" align="left" alt="Screenshot of TARDIS logo with black border." width="150"> | Needed to tweak the CSS code to remove the 2px border that was originally added for the logo placeholder text. |
-
+| 3 | Game Page | After adding the initial JS code, the mystery image was not loading with a null error on the console.  <img src="assets/images/bug3mysteryimagedisplay.webp" align="left" alt="Screenshot of broken image on webpage" width="150"> | The issue arose because the script was looking for the modal btn which isn't on the game page. I decided to split the JS into two files, for ease of organisation and debugging during the project.|
+| 4 | Game Page | After adding the initial JS code, the mystery image was not loading with a 404 error on the console.  <img src="assets/images/bug3mysteryimagedisplay.webp" align="left" alt="Screenshot of broken image on webpage" width="150"> | This was an issue with the locations.json file - I accidentally coded the images as JPG rather than WEBP.|
 
 ## Credits
 
