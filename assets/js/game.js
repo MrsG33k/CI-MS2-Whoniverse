@@ -13,6 +13,7 @@ async function loadGameData() {
         allLocations = await response.json();
         initMap(); //Loads the map
         startGame();
+        setupEventListeners();
     } catch (error) {
         console.error("Time Vortex Error: Could not load locations", error);
     }  
@@ -68,7 +69,7 @@ var tardisIcon = L.icon ({
     iconAnchor: [20,60],
     popupAnchor: [0, -60]
 })
-
+//Place a marker at the user location on the map
 function placeMarker(location) {
     //Checks to see if a marker already exists - if not, it will create one
     if (userMarker) {
@@ -79,4 +80,34 @@ function placeMarker(location) {
     userGuessCoords = location;
     //Log the latitude and longlitude to console to check it works correctly.
     console.log("Marker Placed at:", location.lat, location.lng);
+}
+
+//SetUp event Listeners
+function setupEventListeners(){
+    const submitBtn = document.getElementById('submit-guess');
+    const hintBtn = document.getElementById('hint-btn');
+
+    if (submitBtn) {
+        submitBtn.onclick = () => {
+            if(userGuessCoords) {
+                //fetch the actual location co-ords from locations.json
+                const actual = L.latLng(currentLocation.coords.lat, currentLocation.coords.lng);
+                //calculate distance using the leaflet function
+                const distanceInMeters = userGuessCoords.distanceTo(actual);
+                const distanceInKm = (distanceInMeters / 1000).toFixed(2);
+
+                //Give the user feedback on their guess
+                alert(`Travel Complete! You landed ${distanceInKm} km away from ${currentLocation.name}.`);
+            } else {
+                //Gives the user feedback if they submit before clicking on the map.
+                alert("Allonsy! We can't land the TARDIS without the coordinates! Lock that location into the map first")
+            }
+        };
+    }
+    // If the user clicks the hint button - will load up the hint from the current location.
+    if (hintBtn) {
+        hintBtn.onclick = () => {
+            alert(`Affirmative Master... Hint: ${currentLocation.hint}`);
+        }
+    }
 }

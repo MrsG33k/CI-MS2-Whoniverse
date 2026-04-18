@@ -19,7 +19,7 @@
     "id": 3,
     "name": "Bodiam Castle",
     "image": "/assets/images/scenes/location3.webp",
-    "coords": { "lat": 51.46391457304263, "lng": -3.164153135426584 },
+    "coords": { "lat": 51.0022631, "lng": 0.5432197 },
     "hint": "Located in East Sussex, this moated marvel was built to defend against a French invasion, but in 1983, the threat came from the stars.",
     "fact": "Seen in The King's Demons: - Bodiam is famous for being a 'hollow' castle—the interior is largely in ruins, while the exterior is perfectly preserved. This is why almost all the interior shots in The King’s Demons had to be filmed back at BBC Television Centre on sets, as the real castle didn't have enough 'rooms' left to house a King!"
   },
