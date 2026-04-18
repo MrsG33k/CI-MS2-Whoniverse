@@ -214,6 +214,11 @@ A great tip for this section is to include them as you use them, that way you wo
 
 * [To WebP](https://towebp.io/) - Used to convert images to WebP format.
 
+* [Photopea](https://www.photopea.com/) - Used to edit and create graphics for the project
+
+* [Favicon.io](https://favicon.io/) - Used to create the favicon based on the logo
+
+
 ## Deployment & Local Development
 
 👩🏻‍💻 View an example of a completed Deployment & Local Development section [here](https://github.com/kera-cudmore/TheQuizArms#Deployment)
@@ -247,9 +252,7 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 
 ## Credits
 
-👩🏻‍💻 View an example of a completed Credits section [here](https://github.com/kera-cudmore/BookWorm#Credits)
 
-The Credits section is where you can credit all the people and sources you used throughout your project.
 
 ### Code Used
 
@@ -261,7 +264,8 @@ Who wrote the content for the website? Was it yourself - or have you made the si
 
 ###  Media
 
-If you have used any media on your site (images, audio, video etc) you can credit them here. I like to link back to the source where I found the media, and include where on the site the image is used.
+- [Flaticon ](https://www.flaticon.com/free-icon/maps-and-flags_447031?term=map+pin&page=1&position=2&origin=tag&related_id=447031): Image of Map Pin for creating the TARDIS map pin
+- [The Noun Project](https://thenounproject.com/browse/icons/term/tardis/) Tardis by Arancha R - The Noun Project (CC BY 3.0) used to created the TARDIS map pin
   
 ###  Acknowledgments
 
