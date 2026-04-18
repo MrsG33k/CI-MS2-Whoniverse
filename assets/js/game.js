@@ -51,8 +51,13 @@ function updateDisplay(){
 }
 //Function to detect and stop the game after 5 rounds
 function nextRound(){
+    //closes the modal
+    document.getElementById('result-modal').style.display = 'none';
+
     if (round < 5) {
         round++;
+        document.getElementById('round-count').innerText = `${round} of 5`;
+        console.log(`I have started  round ${round}`);
         //resets the map / marker between rounds
         if(userMarker) {
             map.removeLayer(userMarker);
@@ -63,7 +68,7 @@ function nextRound(){
         map.setView([51.4730, -3.150],16);
 
         //update score
-        document.getElementById('currentScore').innerText = score;
+        document.getElementById('current-score').innerText = score;
 
         //Restart the game
         startGame();
@@ -75,12 +80,13 @@ function nextRound(){
 }
 
 function showGameOver() {
-    const resultTitle = document.getElementById('result-title');
+    const resultTitle = document.getElementById('modal-title');
     const resultText = document.getElementById('result-text');
     const nextBtn = document.getElementById('next-round-btn');
 
     resultTitle.innerText = "Timeline Stabilised!";
-    resultText.innerText = `<h3>Final Score: ${score}</h3> You've successfully navigated the Whoniverse! FANTASTIC! </p>`;
+    resultText.innerHTML = `<h3>Final Score: ${score}</h3> You've successfully navigated the Whoniverse! FANTASTIC! </p>`;
+    document.getElementById('stats-container').style.display = 'none';
 
     //update the button to start a new game
     nextBtn.innerText = "Play Again?";
@@ -148,7 +154,7 @@ function setupEventListeners(){
                 const distanceInKm = (distanceInMeters / 1000).toFixed(2);
 
                 //Calculate a score
-                let points = Math.max(0,5000 - Math.floor(distanceInKm * 5));
+                let points = Math.max(0,5000 - Math.floor(distanceInKm * 10));
                 score += points;
 
                 //Give the user feedback on their guess using the modal
@@ -159,7 +165,6 @@ function setupEventListeners(){
                 document.getElementById('result-modal').style.display = 'block';
             } else {
                 //Gives the user feedback if they submit before clicking on the map.
-                //alert("Allonsy! We can't land the TARDIS without the coordinates! Lock that location into the map first")
                 document.getElementById('error-modal').style.display = 'block';
 
             }
@@ -184,6 +189,13 @@ function setupEventListeners(){
     if(closeErrorBtn) {
         closeErrorBtn.onclick = () => {
             document.getElementById('error-modal').style.display = 'none';
+        }
+    }
+
+    const nextRoundBtn = document.getElementById('next-round-btn');
+    if(nextRoundBtn) {
+        nextRoundBtn.onclick = () => {
+            nextRound();
         }
     }
 }
