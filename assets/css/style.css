@@ -101,6 +101,12 @@ h1 {
     background-color: var(--header-background);
 }
 
+.whoniverse-accent {
+    color: var(--accent-color);
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+    font-weight: bold;
+}
+
 .logo-wrap {
     width: 55px;
     height: 60px;
