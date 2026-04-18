@@ -266,6 +266,11 @@ Who wrote the content for the website? Was it yourself - or have you made the si
 
 - [Flaticon ](https://www.flaticon.com/free-icon/maps-and-flags_447031?term=map+pin&page=1&position=2&origin=tag&related_id=447031): Image of Map Pin for creating the TARDIS map pin
 - [The Noun Project](https://thenounproject.com/browse/icons/term/tardis/) Tardis by Arancha R - The Noun Project (CC BY 3.0) used to created the TARDIS map pin
+- [Wikimedia](https://commons.wikimedia.org/wiki/File:TARDIS-trans.png) TARDIS png file CC-BY-SA-2.5 - used to create the landing page image
+- [Adobe Stock](https://stock.adobe.com/) The Globe Illuminated by Futuristic Hexagonal Network Design by Gurav - used to create the landing page image
+- [Adobe Stock](https://stock.adobe.com/) 3D Realistic Location map pin gps pointer markers vector illustration for destination by Murniati - used to create the landing page image
+- [Adobe Stock](https://stock.adobe.com/) Blue Electric Energy Ring with Crackling Aura by Prazis Images - used to create the landing page image
+
   
 ###  Acknowledgments
 
