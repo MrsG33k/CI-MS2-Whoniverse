@@ -83,15 +83,20 @@ function showGameOver() {
     const resultTitle = document.getElementById('modal-title');
     const resultText = document.getElementById('result-text');
     const nextBtn = document.getElementById('next-round-btn');
+    const exitBtn = document.getElementById('exit-btn');
 
     resultTitle.innerText = "Timeline Stabilised!";
     resultText.innerHTML = `<h3>Final Score: ${score}</h3> You've successfully navigated the Whoniverse! FANTASTIC! </p>`;
     document.getElementById('stats-container').style.display = 'none';
 
+    //show the return to home button
+    if(exitBtn) exitBtn.style.display = "inline-block";
+
     //update the button to start a new game
     nextBtn.innerText = "Play Again?";
     nextBtn.onclick = () => {
         window.location.reload();
+
     };
 
     document.getElementById('result-modal').style.display = 'block';
