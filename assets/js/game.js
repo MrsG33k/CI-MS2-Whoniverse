@@ -159,7 +159,7 @@ function setupEventListeners(){
                 const distanceInKm = (distanceInMeters / 1000).toFixed(2);
 
                 //Calculate a score
-                let points = Math.max(0,5000 - Math.floor(distanceInKm * 10));
+                let points = Math.max(0,5000 - Math.floor(distanceInKm * 100));
                 score += points;
 
                 //Give the user feedback on their guess using the modal
