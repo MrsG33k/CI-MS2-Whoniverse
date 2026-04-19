@@ -233,6 +233,42 @@ h1 {
     font-size: 1rem;
 }
 
+/* 404 Styles */
+    .error-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 60vh;
+        padding: 20px;
+    }
+
+    .error-container img {
+        max-width: 400px;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .error-container a {
+        margin-top: 30px;
+        padding: 12px 30px;
+    }
+
+
+    .broken-tardis {
+        width: 300px;
+        max-width: 80%;
+        filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.2));
+        transition: transform 0.5s ease;
+        margin-bottom: 20px;
+    }
+
+    .broken-tardis:hover {
+        transform: rotate(-10deg) scale(1.05);
+        filter: drop-shadow(0 0 25px rgba(255, 215, 0, 0.4)); /* Golden regeneration glow */
+    }
+
 /* Button Styles */
 
 .cta-section {
