@@ -51,9 +51,8 @@
 
 /* Custom CSS Styles by Jennie Whittaker */
 
-/* Toggle for Light/Dark Mode */
 :root {
-    /* Light Mode Colors */
+    /* Theme Colors */
     --background-color: #F4F4F9;
     --text-color: #063970;
     --accent-color: #FFD700;
@@ -64,17 +63,6 @@
     --card-bg: #fff;
 }
 
-[data-theme="dark"] {
-    /* Dark Mode Colors */
-    --background-color: #0B0C10;
-    --text-color: #F0F0F0;
-    --accent-color: #FFD700;
-    --border-color: #fff;
-    --button-background: #1F2833;
-    --header-background: #1F2833;
-    --card-bg: #1F2833;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--background-color);
@@ -82,7 +70,6 @@ body {
     display:flex;
     flex-direction: column;
     min-height: 100vh;
-    transition: background 0.3s ease, color 0.3s ease;
 }
 
 h1 {
@@ -101,6 +88,7 @@ h1 {
     background-color: var(--header-background);
 }
 
+
 .whoniverse-accent {
     color: var(--accent-color);
     text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
@@ -114,6 +102,21 @@ h1 {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    margin-right: 20px;
+}
+
+
+.logo-link {
+    text-decoration: none;
+    color: inherit; 
+    display: flex; 
+}
+
+
+.logo-link:hover .logo {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+    filter: brightness(1.2); 
 }
 
 /* Landing Page Styles */
