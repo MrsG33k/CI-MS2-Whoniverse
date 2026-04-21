@@ -234,7 +234,6 @@ A great tip for this section is to include them as you use them, that way you wo
 
 ## Deployment & Local Development
 
-👩🏻‍💻 View an example of a completed Deployment & Local Development section [here](https://github.com/kera-cudmore/TheQuizArms#Deployment)
 
 ### Deployment
 
@@ -273,7 +272,9 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 
 ### Code Used
 
-If you have used some code in your project that you didn't write, this is the place to make note of it. Credit the author of the code and if possible a link to where you found the code. You could also add in a brief description of what the code does, or what you are using it for here.
+[W3 Schools](https://www.w3schools.com/Js/js_project_modal_popup.asp) Tutorial on how to use HTML and Javascript to create the modal popups. 
+
+[Leaflet.js](https://leafletjs.com/reference.html) Javascript library for using the Open Source Maps
 
 ### Content
 
