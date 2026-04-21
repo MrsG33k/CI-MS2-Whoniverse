@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Westminister Bridge",
-    "image": "/assets/images/scenes/location1.webp",
+    "image": "./assets/images/scenes/location1.webp",
     "coords": { "lat": 51.5008659362793, "lng": -0.12243890017271042},
     "hint": "The invaders glide toward the heart of British law, where a famous bell tolls but never speaks.",
     "fact": "Seen in: Dalek invasion of Earth: To capture those eerie shots of a deserted London, the production team had to film at the crack of dawn on a Sunday morning."
