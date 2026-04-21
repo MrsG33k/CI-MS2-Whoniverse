@@ -16,8 +16,8 @@ async function loadGameData() {
         const response = await fetch('assets/js/locations.json');
         allLocations = await response.json();
         initMap(); //Loads the map
-        startGame();
-        setupEventListeners();
+        startGame(); //Starts the game
+        setupEventListeners(); //Event listeners for clicks/buttons
     } catch (error) {
         console.error("Time Vortex Error: Could not load locations", error);
     }  
@@ -126,7 +126,7 @@ function initMap(){
 }
 //Create a custom pin marker based on the TARDIS pin
 var tardisIcon = L.icon ({
-    iconUrl: '/assets/images/TARDISpin.svg',
+    iconUrl: './assets/images/TARDISpin.svg',
     iconSize: [40,60],
     iconAnchor: [20,60],
     popupAnchor: [0, -60]
