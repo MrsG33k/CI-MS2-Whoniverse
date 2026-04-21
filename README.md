@@ -1,17 +1,25 @@
 # Milestone 2: Where in the Whoniverse?
 
-👩🏻‍💻 View an example of this section [here](https://github.com/kera-cudmore/Bully-Book-Club#bully-book-club-website)
+<figure>
+    <img src="assets/images/amiresponsivegame.webp"
+         alt="Where in the whoniverse loading on a monitor, laptop, tablet and phone">
+</figure>
 
-Welcome to Where in the Whoniverse? 
+## WELCOME TO WHERE IN THE WHONIVERSE?
+
 This is an interactive front-end project using HTML, CSS and Javascript developed as part of the Code Institute Level 5 Diploma in Web Application Development.
 
 The purpose of this website is to provide an interactive, location guessing game based on the BBC Series Doctor Who. The website will challenge users to identify iconic filming locations across the Earth powered by real world map data. 
 
-Add an image of the finished site here. I like to use [amiresponsive](https://ui.dev/amiresponsive) to get an image of my site on all device sizes, and amiresponsive allows you to click links on the page and scroll, so each device can show a different element of your site.
+You can view the deployed game here [Where in the Whoniverse?](https://mrsg33k.github.io/CI-MS2-Whoniverse/)
 
-Add a link to the live site here, for Milestone 1 this will be the GitHub Pages Link from when you deployed the site.
 
-If you want to add optional [shields.io](https://shields.io) badges to your README, I like to add them to this section.
+![Github Last Commit](https://img.shields.io/github/last-commit/MrsG33k/CI-MS2-Whoniverse)
+![Github language count](https://img.shields.io/github/languages/count/MrsG33k/CI-MS2-Whoniverse)
+![HTML](https://img.shields.io/badge/language-HTML-red)
+![CSS](https://img.shields.io/badge/language-CSS-blue)
+![JS](https://img.shields.io/badge/language-Javascript-yellow)
+![W3C validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fmrsg33k.github.io%2FCI-MS2-Whoniverse%2Findex.html)
 
 ---
 
@@ -56,8 +64,6 @@ If you want to add optional [shields.io](https://shields.io) badges to your READ
 
 ## User Experience (UX)
 
-👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/Bully-Book-Club#user-experience-ux)
-
 ### User Stories
 
 #### First Time Visitor goals
@@ -70,9 +76,9 @@ If you want to add optional [shields.io](https://shields.io) badges to your READ
 * As a First Time Visitor, I want to see a summary of my distance from the target and a calculated score after each guess. 
 
 #### Returning Visitor goals
-* As a Returning Visitor, I want a 'Play again' button that resets the game stateand picks a new random location.
+* As a Returning Visitor, I want a 'Play again' button that resets the game state and picks a new random location.
 
-* As a Returning Visitor, I want the game to remember my "Best Guess" (closest distance) from previous sessions so that I have a personal record to beat.
+* As a Returning Visitor, I want the game to feel different each time, by providing a range of different locations for me to guess the location of.
 
 * As a Returning Visitor, I want the game to remember my "Theme" settings so that the app feels personalised to me every time I return.
 
