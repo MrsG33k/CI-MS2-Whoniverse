@@ -297,8 +297,11 @@ If you have used some code in your project that you didn't write, this is the pl
 [DoctorWho.tv](https://www.doctorwhotv.co.uk/who-mysteries-the-ducks-31769.htm) Image of Leadworth 
 [Wales Online](https://www.walesonline.co.uk/news/local-news/bbc-search-lost-doctor-who-2547874)Image of Abominable Snowman
 [Tardis Fandom](https://tardis.fandom.com/wiki/The_Pandorica_Opens) Pandorica Opens - Expanding TARDIS Image
+[https://shields.io/](https://shields.io/) - To create the badges on the README introduction
 
   
 ###  Acknowledgments
 
-If someone helped you out during your project, you can acknowledge them here! For example someone may have taken the time to help you on slack with a problem. Pop a little thank you here with a note of what they helped you with (I like to try and link back to their GitHub or Linked In account too). This is also a great place to thank your mentor and tutor support if you used them.
+A huge thank you to my husband Mike Whittaker he was a pivotal support during the project, firstly as a huge Doctor Who fan and for introducing me to Doctor Who in the first place. He has played this game an unnatural number of times to help iron out bugs and fixes early on and suggested changes to improve it as I developed the game. 
+
+Thank you to [Syn](https://github.com/synmux) for their support with Github / Gitlab when my account got restricted and I couldn't do anything within Github!
