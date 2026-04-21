@@ -351,15 +351,30 @@ h1 {
     .btn { 
         text-align: center;
     }
-
+    /* to ensure the items stack vertically on mobile */
     .game-container {
         grid-template-columns: 1fr;
         height: auto;
     }
-
+    /* Limit the size of the map on mobile */
     #game-map {
         height: 400px;
     }
+
+    /* To stop the buttons overlapping on mobile */
+    .modal-content, .result-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #next-round-btn, #exit-btn {
+        width: 80%;
+        margin: 5px 0;
+        padding: 15px;
+    }
+
 
 
 
