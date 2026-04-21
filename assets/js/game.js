@@ -17,7 +17,7 @@ async function loadGameData() {
         allLocations = await response.json();
         initMap(); //Loads the map
         startGame(); //Starts the game
-        setupEventListeners(); //Event listeners for clicks/buttons
+        setupEventListeners(); //Event listeners for the gameplay
     } catch (error) {
         console.error("Time Vortex Error: Could not load locations", error);
     }  
