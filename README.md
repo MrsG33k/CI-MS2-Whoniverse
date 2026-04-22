@@ -137,6 +137,7 @@ I used [Google Fonts](https://fonts.google.com/) for this project.
 <br>
 <br>
 <br>
+
 * Locations - For the locations, I wanted to find still images from iconic locations in Doctor Who to use as a visual clue for the player. 
 
 * 404 Page - For the 404,  I have always liked a funny picture on a 404 page. I liked the idea of a broken down TARDIS or something like that as a visual clue to the user that something has gone wrong. 
@@ -271,19 +272,25 @@ Code Institute have an amazing channel for all things accessibility (a11y-access
 
 ### Deployment
 
-Include instructions here on how to deploy your project. For your first project you will most likely be using GitHub Pages.
+### GitHub Pages
 
-### Local Development
+The project was deployed to GitHub Pages using the following steps...
 
-The local development section gives instructions on how someone else could make a copy of your project to play with on their local machine. This section will get more complex in the later projects, and can be a great reference to yourself if you forget how to do this.
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+4. Under "Source", click the dropdown called "None" and select "Master Branch".
+5. The page will automatically refresh.
+6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
 
-#### How to Fork
+### Forking the GitHub Repository
 
-Place instructions on how to fork your project here.
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
-#### How to Clone
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
 
-Place instructions on how to clone your project here.
 
 ## Testing
 Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
