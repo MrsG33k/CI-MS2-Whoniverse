@@ -92,9 +92,17 @@ h1 {
 
 
 .whoniverse-accent {
-    color: var(--accent-color);
-    text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+    color: #c49102; /* Your preferred gold */
     font-weight: bold;
+    
+    /* The "Safe-Guard" Shadows: 
+       We add a few dark, sharp shadows to create a high-contrast 'buffer' 
+       against the white background.
+    */
+    text-shadow: 
+        1px 1px 0px rgba(0, 0, 0, 0.8),  /* Bottom Right */
+        -1px 1px 0px rgba(0, 0, 0, 0.2), /* Bottom Left (softer) */
+        0px 0px 8px rgba(196, 145, 2, 0.4); /* The Golden Glow */
 }
 
 .logo-wrap {
@@ -292,9 +300,8 @@ h1 {
 
 .btn:hover {
     background: var(--text-color);
-    color: var(--background-color);
+    color: var(--border-color);
     background-color: var(--accent-color);
-    color:000;
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
     transition: all 0.3 ease;
