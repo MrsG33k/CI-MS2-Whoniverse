@@ -123,7 +123,7 @@ h1 {
 }
 
 
-.logo-link:hover .logo {
+.logo-link:hover {
     transform: scale(1.05);
     transition: transform 0.2s ease;
     filter: brightness(1.2); 
