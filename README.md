@@ -84,29 +84,62 @@ You can view the deployed game here [Where in the Whoniverse?](https://mrsg33k.g
 
 ## Design
 
-👩🏻‍💻 View an example of a completed design section [here](https://github.com/kera-cudmore/earth-day-hackathon-2022#Design)
 
 ### Colour Scheme
 
-Add all information about your colour scheme for your site here. You can explain why you choose the colours you did?
+Because this project is based on Doctor Who I wanted to incorporate the colour palette of Doctor Who without completely copywriting the branding and trademark. 
+<br>
+<img src ="assets/images/coolorspalette.webp" alt="Colour palette of Blue, Gold and off white for the website" width="500" align="left">
+<img src="assets/images/doctorwhologo.webp" alt="Doctor Who logo" width ="300">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+I used [coolors](https://coolors.co/) to create my colour palette.
+These colours have been used in the following way:
+* I have used `#063970` as the text colour, the button background.
+* I have used `#FFD700` as an accent colour. It is used as a Hover effect on the buttons and to emphasise the 'Whoniverse' in the title. 
+* I have used `#fff` for the borders on the project
 
-I like to include a palette of the colour scheme here, my favourite site for creating a colour palette is [coolors](https://coolors.co/), but there are lots of other sites that also do the same thing, like [ColorSpace](https://mycolor.space/?hex=%23F5F5F5&sub=1), [Muzli Colors](https://colors.muz.li/), [Adobe Colour Wheel](https://color.adobe.com/create/color-wheel) and [Canva](https://www.canva.com/colors/color-palette-generator/) to name a few.
+For this project I used CSS styles for colours throughout the project. Instead of hard-coding hex codes in the various styles I declared the colour palette as global variables in the `root:` selector. This made sense for many reasons, primarily because the colours need only be declared once. Any follow up changes or tweaks to colours can be made in one place and updated throughout.
+
+By using `var` to insert the value of a variable it also means I can give them semantic meaning. So instead of a variety of different Hex code, I instead have `var(--accent-colour)` which is brilliant for readability throughout.  
+
+Initially I was going to implement a dark/light mode toggle and whilst this is now moved to a future development, by using the variables it would be easy to swap the values under a different class rather than write additional CSS to accommodate the different light/dark mode colours.  
 
 ### Typography
 
-If you've imported fonts to use in your project, add some information about them here. You can include information like:
+I used [Google Fonts](https://fonts.google.com/) for this project. 
 
-Why did you choose the font you have?
-Is this an accessibly friendly font?
-What weights have you included?
+* For headings / titles I used <strong>Orbitron</strong>. I chose this font because it's a sans-serif font with a futuristic look. In the same way as the colours, I didn't want any copyright / trademark infringement so steered away from fan fonts. 
 
-I also like to include an image of the fonts chosen as a reference.
+  <img src="assets/images//fontorbitron.webp" alt="The Orbitron font spelling Where in the Whoniverse">
+  <hr>
+  <br>
+* For the main text, I wanted to include a sans serif font for readability. I also wanted it to have a slightly futuristic look and so I used <strong>Roboto</strong>. 
 
-[Google Fonts](https://fonts.google.com/) is a popular choice for importing fonts to use in your project, as it doesn't require you to download the fonts to use them.
+   <img src="assets/images//fontroboto.webp" alt="The Roboto font spelling Where in the Whoniverse">
+
 
 ### Imagery
 
-Use this section to explain what sort of imagery you plan to use through your site.
+* Logo - For the logo, I wanted to merge together the idea of the TARDIS and a standard Map Pin. I wanted to keep it nice and simple, so the focus is on the game, rather than the logo. 
+   <img src="assets/images/logoidea.webp" alt="A map pin and the TARDIS" width="150" align="left">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+* Locations - For the locations, I wanted to find still images from iconic locations in Doctor Who to use as a visual clue for the player. 
+
+* 404 Page - For the 404,  I have always liked a funny picture on a 404 page. I liked the idea of a broken down TARDIS or something like that as a visual clue to the user that something has gone wrong. 
 
 ### Wireframes
 Wireframes were created using [Canva](https://www.canva.com)

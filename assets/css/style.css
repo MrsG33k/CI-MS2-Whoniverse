@@ -65,6 +65,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     background-color: var(--background-color);
     color: var(--text-color);
     display:flex;
@@ -74,6 +75,7 @@ body {
 
 h1 {
     font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
 }
 
 /*Page Layout Styles */
@@ -374,7 +376,7 @@ h1 {
         margin: 5px 0;
         padding: 15px;
     }
-
+    /* To make the logo / title smaller on mobile devices */
     .main-header {
         padding: 5px 10px;
         min-height: auto;
