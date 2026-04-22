@@ -105,7 +105,8 @@ I used [coolors](https://coolors.co/) to create my colour palette.
 These colours have been used in the following way:
 * I have used `#063970` as the text colour, the button background.
 * I have used `#FFD700` as an accent colour. It is used as a Hover effect on the buttons and to emphasise the 'Whoniverse' in the title. 
-* I have used `#fff` for the borders on the project
+* I have used `#F4F4F9` as the background. I chose this off white colour as it is less harsh on the eye compared to using `#FFF`
+* I have used `#000` for the borders on the project
 
 For this project I used CSS styles for colours throughout the project. Instead of hard-coding hex codes in the various styles I declared the colour palette as global variables in the `root:` selector. This made sense for many reasons, primarily because the colours need only be declared once. Any follow up changes or tweaks to colours can be made in one place and updated throughout.
 
@@ -227,15 +228,16 @@ To enhance the thematic immersion, I replaced the default Leaflet marker with a 
 
 ### Accessibility
 
-Be an amazing developer and get used to thinking about accessibility in all of your projects!
+Throughout this project I have aspired to make it as accessible as possible. 
+#### Design
+I deliberately chose a clean, high-contrast design throughout the project. The off white background colour is easier on the eye to the viewer. Using minimal colours throughout the project will aid players with visual impairments. 
 
-This is the place to make a note of anything you have done with accessibility in mind. Some examples include:
+The UI has been built using a mobile-first approach. It features large touch targets at all interaction points and a responsive header that scales to ensure that the gameplay content remains 'above the fold' on smaller screens. 
 
-Have you used icons and added aria-labels to enable screen readers to understand these?
-Have you ensured your site meets the minimum contrast requirements?
-Have you chosen fonts that are dyslexia/accessible friendly?
+The game flow is designed with clear exit points 'Play Again' and 'Return to Menu' as well as the header providing a clickable link back to the homepage. Intuitive feedback is given to the player such as the distance calculations and score summaries. The aim is to ensure that players of all abilities can navigate the game with ease. 
 
-Code Institute have an amazing channel for all things accessibility (a11y-accessibility) I would highly recommend joining this channel as it contains a wealth of information about accessibility and what we can do as developers to be more inclusive.
+### Coding
+I have used semantic HTML and ARIA labels throughout to support those using assistive technologies and screen readers. This will be particularly helpful for the interactive elements, navigation and the modals. 
 
 ## Technologies Used
 
