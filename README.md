@@ -208,13 +208,21 @@ This section can be used to explain what pages your site is made up of.
 If there is a feature that appears on all pages of your site, include it here. Examples of what to include would the the navigation, a footer and a favicon.
 
 I then like to add a screenshot of each page of the site here, i use [amiresponsive](https://ui.dev/amiresponsive) which allows me to grab an image of the site as it would be displayed on mobile, tablet and desktop, this helps to show the responsiveness of the site.
+#### index.html
+
 #### Game.html
 
 To enhance the thematic immersion, I replaced the default Leaflet marker with a custom TARDIS-pin SVG. I adjusted the iconAnchor properties to ensure the 'landing' point of the TARDIS correctly aligns with the user's geographic coordinates.
 
+#### 404.html
+
 ### Future Implementations
 
-What features would you like to implement in the future on your site? Would you like to add more pages, or create login functionality? Add these plans here.
+* I initially wanted to build the project with a light/dark mode toggle. As part of my research into this, I stumbled across the global variables for the colour scheme. I soon found myself getting sidetracked and spending a lot of time on the toggle and couldn't quite get it right, so decided to shelf it for this project and add it as a future development.
+
+* I would like to add the ability to save a players highest score for each game, and have a global leaderboard. I think this would encourage players to want to keep trying to get a higher score to reach the leaderboard.
+
+* In the interests of time, I limited this project to 10 locations. I would like to expand this further to include more variety in the playability of the game, but would also like to add a skill level. There are so many Doctor Who filming locations with some being a lot trickier, so adding a Hard / Expert mode would be a fun addition to the game. 
 
 ### Accessibility
 
@@ -230,21 +238,14 @@ Code Institute have an amazing channel for all things accessibility (a11y-access
 
 ## Technologies Used
 
-👩🏻‍💻 View an example of a completed Technologies Used section [here](https://github.com/kera-cudmore/Bully-Book-Club#Technologies-Used)
-
-I chose to use Native JavaScript (ES6+) over JQuery to ensure high performance, reduce external dependencies, and demonstrate a deeper understanding of DOM manipulation and asynchronous programming
-
 ### Languages Used
 
-Make a note here of all the languages used in creating your project. For the first project this will most likely just be HTML & CSS.
+* HTML5
+* CSS
+* Javascript (I chose to use Native JavaScript over JQuery to ensure high performance, reduce external dependencies, and demonstrate a deeper understanding of DOM manipulation.)
 
 ### Frameworks, Libraries & Programs Used
 
-Add any frameworks, libraries or programs used while creating your project.
-
-Make sure to include things like git, GitHub, the program used to make your wireframes, any programs used to compress your images, did you use a CSS framework like Bootstrap? If so add it here (add the version used).
-
-A great tip for this section is to include them as you use them, that way you won't forget what you ended up using when you get to the end of your project.
 
 * [Canva](https://www.canva.com/online-whiteboard/wireframes/) - Used to create wireframes.
 
