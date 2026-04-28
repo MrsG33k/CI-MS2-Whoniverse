@@ -286,6 +286,12 @@ When a user clicks the submit button after placing a pin marker. A calculation b
     <figcaption>The submit modal will provide feedback to the user on where the location is, how far away they were from it and how many points they are going to get.</figcaption>
 </figure>
 
+<figure>
+    <img src="assets/images/gameendof.webp" width='400'
+         alt="The submit modal will pop up once a user has finished 5 rounds">
+    <figcaption>Once a player has completed 5 rounds they get a modal with their final score and the chocies to Play Again? or Exit to Menu</figcaption>
+</figure>
+
 #### 404.html
 The 404 page acts as a seamless user experience, if a user were to navigate to a non existent URL instead of seeing a standard browswer error they will instead see a themed 404 page with a button navigating back to the index.html page. I implemented a CSS on hover effect with the TARDIS image just for "fun". I was thinking along the lines of the dinosaur game you get on browswers. Just a small bit of entertainment for the user.
 
