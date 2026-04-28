@@ -1,4 +1,4 @@
-
+/*jshint esversion: 8 */ 
 // THE GAME --- Chosing and displaying the location image
 
 let allLocations = [];
@@ -9,6 +9,7 @@ let map;
 let userMarker = null;
 let userGuessCoords = null;
 let usedLocationIndexes = [];
+let L = null;
 
 //Fetch the data
 async function loadGameData() {
@@ -130,7 +131,7 @@ var tardisIcon = L.icon ({
     iconSize: [40,60],
     iconAnchor: [20,60],
     popupAnchor: [0, -60]
-})
+});
 //Place a marker at the user location on the map
 function placeMarker(location) {
     //Checks to see if a marker already exists - if not, it will create one
@@ -180,27 +181,27 @@ function setupEventListeners(){
         hintBtn.onclick = () => {
             document.getElementById('hint-text').innerText = currentLocation.hint;
             document.getElementById('hint-modal').style.display = 'block';
-        }
+        };
     }
     //Waits for user to close the hint button
     const closeHintBtn = document.getElementById('close-hint-btn');
     if(closeHintBtn) {
         closeHintBtn.onclick = () => {
             document.getElementById('hint-modal').style.display = 'none';
-        }
+        };
     }
     //waits for user to close the error button
     const closeErrorBtn = document.getElementById('close-error-btn');
     if(closeErrorBtn) {
         closeErrorBtn.onclick = () => {
             document.getElementById('error-modal').style.display = 'none';
-        }
+        };
     }
 
     const nextRoundBtn = document.getElementById('next-round-btn');
     if(nextRoundBtn) {
         nextRoundBtn.onclick = () => {
             nextRound();
-        }
+        };
     }
 }
