@@ -80,7 +80,7 @@ function nextRound(){
 }
 
 function showGameOver() {
-    const resultTitle = document.getElementById('modal-title');
+    const resultTitle = document.getElementById('result-title');
     const resultText = document.getElementById('result-text');
     const nextBtn = document.getElementById('next-round-btn');
     const exitBtn = document.getElementById('exit-btn');
@@ -165,7 +165,7 @@ function setupEventListeners(){
                 //Give the user feedback on their guess using the modal
                 document.getElementById('dist-display').innerText = distanceInKm;
                 document.getElementById('points-display').innerText = points;
-                document.getElementById('result-text').innerText = `You were supposed to materialise near ${currentLocation.name}!`;
+                document.getElementById('result-title').innerText = `You were supposed to materialise near ${currentLocation.name}!`;
 
                 document.getElementById('result-modal').style.display = 'block';
             } else {
