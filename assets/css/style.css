@@ -226,7 +226,7 @@ h1 {
     font-size: 1.2rem;
 }
 
-#modal-title {
+.modal-title {
     color: var(--button-background);
     font-family: 'Orbitron',sans-serif;
 }
@@ -238,9 +238,13 @@ h1 {
     font-style: italic;
 }
 
-.hint-content h3 {
+.hint-content h2 {
     color: #00f2ff;
     font-size: 1rem;
+}
+
+.h2-small {
+    font-size: 1.2rem;
 }
 
 /* 404 Styles */

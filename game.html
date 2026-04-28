@@ -26,7 +26,7 @@
 
     <main class = "game-container">
         <section class = "map-section">
-            <div id="game-map" role="application" aria-label="Interactive map for placing location guesses" aria-describedby="map-instructions">
+            <div id="game-map" role="application" aria-label="Interactive map for placing location guesses" aria-describedby="map-loading">
                 <p class="map-loading">Initialising Space-Time Co-ordinates</p>
             </div>
             <button id="submit-guess" class="btn" aria-label="Submit guess for this location">Submit Guess</button>
@@ -34,15 +34,15 @@
 
         <section class="info-section">
             <div class="location-image-box">
-                <img src="" alt="Mystery Doctor Who location" id="mystery-image">
+                <img src="#" alt="Mystery Doctor Who location" id="mystery-image">
             </div>
             <div class="stats-panel">
                 <div class="stat-card" role="status" aria-live="polite">
-                    <h3>Score</h3>
+                    <h2 class="h2-small">Score</h2>
                     <p id="current-score">0</p>
                 </div>
                 <div class ="stat-card" role="status" aria-live="polite">
-                    <h3>Round</h3>
+                    <h2 class="h2-small">Round</h2>
                     <p id="round-count">1 of 5</p>
                 </div>
                 <button id="hint-btn" class="btn" aria-label="Get a sonic scan hint for this location">Hint?</button>
@@ -57,9 +57,9 @@
 
     <div id="result-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
         <div class="modal-content result-content">
-            <h2 id="modal-title">Time-Space Calculations Complete</h2>
+            <h2 class ="modal-title">Time-Space Calculations Complete</h2>
             <hr>
-            <p id="result-text"></p>
+            <p></p>
             <br>
             <div id="stats-container" class="result-stats">
                 <p><strong>Distance Away: </strong><span id="dist-display"></span> km</p>
@@ -73,7 +73,7 @@
 
     <div id="hint-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
         <div class="modal-content hint-content">
-            <h2 id="modal-title"> Sonic Scan Results</h2>
+            <h2 class="modal-title"> Sonic Scan Results</h2>
             <hr>
             <p id="hint-text"></p>
             <br>
@@ -83,9 +83,9 @@
 
     <div id = "error-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
         <div class="modal-content result-content">
-            <h2 id="modal-title">Geronimo!</h2>
+            <h2 class="modal-title">Geronimo!</h2>
             <hr>
-            <p id="result-text">We can't land the TARDIS without the coordinates! Lock that location into the map first</p>
+            <p>We can't land the TARDIS without the coordinates! Lock that location into the map first</p>
             <br>
             <button id="close-error-btn" class="btn">Return to Map</button>
         </div>
