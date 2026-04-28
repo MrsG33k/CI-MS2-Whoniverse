@@ -326,6 +326,8 @@ h1 {
     background-color: rgba(0, 0, 0, 0.8);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
+    overflow-y:auto; 
+    overscroll-behavior: contain;
 }
 
 .modal-content {
@@ -337,6 +339,13 @@ h1 {
     max-width: 500px;
     color: var(--text-color);
     font-family: 'Roboto', sans-serif;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+/* used in JS to fix the scroll issue on mobile with modals */
+.no-scroll {
+    overflow: hidden;
+    height: 100vh;
 }
 
 .close-btn {
