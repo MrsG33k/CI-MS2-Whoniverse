@@ -26,7 +26,7 @@
 
     <main class = "game-container">
         <section class = "map-section">
-            <div id="game-map" role="application" aria-label="Interactive map for placing location guesses">
+            <div id="game-map" role="application" aria-label="Interactive map for placing location guesses" aria-describedby="map-instructions">
                 <p class="map-loading">Initialising Space-Time Co-ordinates</p>
             </div>
             <button id="submit-guess" class="btn btn-secondary" aria-label="Submit guess for this location">Submit Guess</button>
@@ -55,7 +55,7 @@
         <p>&copy; 2026 Where in the Whoniverse? | This is a Doctor Who fan project and not affiliated with the BBC</p>
     </footer>
 
-    <div id="result-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="result-modal">
+    <div id="result-modal" class="modal" role="dialog" aria-modal="true" aria-haspopup="dialog" aria-labelledby="result-modal">
         <div class="modal-content result-content">
             <h2 id="modal-title">Time-Space Calculations Complete</h2>
             <hr>
@@ -71,7 +71,7 @@
         </div>
     </div>
 
-    <div id="hint-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="hint-modal">
+    <div id="hint-modal" class="modal" role="dialog" aria-modal="true" aria-haspopup="dialog" aria-labelledby="hint-modal">
         <div class="modal-content hint-content">
             <h2 id="modal-title"> Sonic Scan Results</h2>
             <hr>
@@ -81,7 +81,7 @@
         </div>
     </div>
 
-    <div id = "error-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="error-modal">
+    <div id = "error-modal" class="modal" role="dialog" aria-modal="true" aria-haspopup="dialog" aria-labelledby="error-modal">
         <div class="modal-content result-content">
             <h2 id="modal-title">Geronimo!</h2>
             <hr>
