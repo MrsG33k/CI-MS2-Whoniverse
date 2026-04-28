@@ -9,7 +9,6 @@ let map;
 let userMarker = null;
 let userGuessCoords = null;
 let usedLocationIndexes = [];
-let L = null;
 
 //Fetch the data
 async function loadGameData() {
