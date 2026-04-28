@@ -313,6 +313,13 @@ The game flow is designed with clear exit points 'Play Again' and 'Return to Men
 ### Coding
 I have used semantic HTML and ARIA labels throughout to support those using assistive technologies and screen readers. This will be particularly helpful for the interactive elements, navigation and the modals. 
 
+| Element      | ARIA Attribute | Purpose   |
+| ----------- | ----------- | ----------- |
+| Modals     | `role="dialog`       | Identifies the pop up as a separate interactive window      |
+| Stats Cards   | `aria-live="polite`       | Automatically announces the score/round changes to visually impaired users       |
+| Close Buttons   | `aria-label`        | Replaces the X symbol with clear close instructions        | 
+| Game Map   | `role="application"`        | Signals that the map is an interactive tool rather than a static image       |           
+
 ## Technologies Used
 
 ### Languages Used
