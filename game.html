@@ -18,18 +18,18 @@
     <header class="main-header">
         <a href="index.html" class="logo-link">
             <div class="logo-wrap">
-                <img src="./assets/images/TARDISpin.svg" alt="Where in the Whoniverse Logo " class="logo">
+                <img src="./assets/images/TARDISpin.svg" alt="Where in the Whoniverse Logo " class="logo" aria-hidden="true">
             </div>
         </a>
-        <a href="index.html" class="logo-link"><h1>Where in the <span class="whoniverse-accent">Whoniverse?</span></h1></a>
+        <a href="index.html" class="logo-link" aria-label="Where in the Whoniverse Home"><h1>Where in the <span class="whoniverse-accent">Whoniverse?</span></h1></a>
     </header>
 
     <main class = "game-container">
         <section class = "map-section">
-            <div id="game-map">
+            <div id="game-map" role="application" aria-label="Interactive map for placing location guesses">
                 <p class="map-loading">Initialising Space-Time Co-ordinates</p>
             </div>
-            <button id="submit-guess" class="btn btn-secondary">Submit Guess</button>
+            <button id="submit-guess" class="btn btn-secondary" aria-label="Submit guess for this location">Submit Guess</button>
         </section>
 
         <section class="info-section">
@@ -37,15 +37,15 @@
                 <img src="" alt="Mystery Doctor Who location" id="mystery-image">
             </div>
             <div class="stats-panel">
-                <div class="stat-card">
+                <div class="stat-card" role="status" aria-live="polite">
                     <h3>Score</h3>
                     <p id="current-score">0</p>
                 </div>
-                <div class ="stat-card">
+                <div class ="stat-card" role="status" aria-live="polite">
                     <h3>Round</h3>
                     <p id="round-count">1 of 5</p>
                 </div>
-                <button id="hint-btn" class="btn btn-secondary">Hint?</button>
+                <button id="hint-btn" class="btn btn-secondary" aria-label="Get a sonic scan hint for this location">Hint?</button>
             </div>
         </section>
 
@@ -55,7 +55,7 @@
         <p>&copy; 2026 Where in the Whoniverse? | This is a Doctor Who fan project and not affiliated with the BBC</p>
     </footer>
 
-    <div id="result-modal" class="modal">
+    <div id="result-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="result-modal">
         <div class="modal-content result-content">
             <h2 id="modal-title">Time-Space Calculations Complete</h2>
             <hr>
@@ -71,7 +71,7 @@
         </div>
     </div>
 
-    <div id="hint-modal" class="modal">
+    <div id="hint-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="hint-modal">
         <div class="modal-content hint-content">
             <h2 id="modal-title"> Sonic Scan Results</h2>
             <hr>
@@ -81,7 +81,7 @@
         </div>
     </div>
 
-    <div id = "error-modal" class="modal">
+    <div id = "error-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="error-modal">
         <div class="modal-content result-content">
             <h2 id="modal-title">Geronimo!</h2>
             <hr>
