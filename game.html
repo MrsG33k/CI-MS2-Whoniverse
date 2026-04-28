@@ -25,12 +25,12 @@
     </header>
 
     <main class = "game-container">
-        <section class = "map-section">
+        <div class = "map-section">
             <div id="game-map" role="application" aria-label="Interactive map for placing location guesses" aria-describedby="map-loading">
-                <p class="map-loading">Initialising Space-Time Co-ordinates</p>
+                <p id="map-loading">Initialising Space-Time Co-ordinates</p>
             </div>
             <button id="submit-guess" class="btn" aria-label="Submit guess for this location">Submit Guess</button>
-        </section>
+        </div>
 
         <section class="info-section">
             <div class="location-image-box">
@@ -55,9 +55,9 @@
         <p>&copy; 2026 Where in the Whoniverse? | This is a Doctor Who fan project and not affiliated with the BBC</p>
     </footer>
 
-    <div id="result-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div id="result-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="result-modal">
         <div class="modal-content result-content">
-            <h2 class ="modal-title">Time-Space Calculations Complete</h2>
+            <h2 class ="modal-title" id="result-modal">Time-Space Calculations Complete</h2>
             <hr>
             <p></p>
             <br>
@@ -71,9 +71,9 @@
         </div>
     </div>
 
-    <div id="hint-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div id="hint-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-hint">
         <div class="modal-content hint-content">
-            <h2 class="modal-title"> Sonic Scan Results</h2>
+            <h2 class="modal-title" id="modal-hint"> Hint Loading....</h2>
             <hr>
             <p id="hint-text"></p>
             <br>
@@ -81,9 +81,9 @@
         </div>
     </div>
 
-    <div id = "error-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div id = "error-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="error-modal">
         <div class="modal-content result-content">
-            <h2 class="modal-title">Geronimo!</h2>
+            <h2 class="modal-title" id="error-modal">Geronimo!</h2>
             <hr>
             <p>We can't land the TARDIS without the coordinates! Lock that location into the map first</p>
             <br>
