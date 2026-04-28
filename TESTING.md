@@ -15,6 +15,7 @@ You can view the deployed game here [Where in the Whoniverse?](https://mrsg33k.g
   * [W3C Validator](#w3c-validator)
   * [JavaScript Validator](#javascript-validator)
   * [Lighthouse](#lighthouse)
+  * [Accessible Web](#accessile-web)
 * [MANUAL TESTING](#manual-testing)
   * [Testing User Stories](#testing-user-stories)
   * [Full Testing](#full-testing)
@@ -75,7 +76,26 @@ All pages of the site are achieving an average score of 99 across the categories
          alt="Scores for the lighthouse indexing on chrome dev tools">
 </figure>
 
+### Accessible Web
+Accessible web extension was used to check the website. All pages passed the full check.
 
+#### Index.html
+<figure>
+    <img src="assets/images/accessibleindex.webp"
+    alt="Accessible Web Extension - Pass">
+</figure>
+
+#### Game.html
+<figure>
+    <img src="assets/images/accessiblegame.webp"
+    alt="Accessible Web Extension - Pass">
+</figure>
+
+#### 404.html
+<figure>
+    <img src="assets/images/accessible404.webp"
+    alt="Accessible Web Extension - Pass">
+</figure>
 
 
 - - -
