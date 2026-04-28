@@ -200,27 +200,101 @@ Wireframes were created using [Canva](https://www.canva.com)
 
 
 ## Features
-
-👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/TheQuizArms#Features)
-
-This section can be used to explain what pages your site is made up of.
+Where in the Whoniverse comprises the following pages:
+* index.html - Allowing the user to start the game, or learn how to play
+* game.html - The game itself 
+* 404.html - If the user requests a webpage that cannot be found, with a redirect to the homepage. 
 
 ### General features on each page
 
-If there is a feature that appears on all pages of your site, include it here. Examples of what to include would the the navigation, a footer and a favicon.
+Each page has the following consistent features:
 
-I then like to add a screenshot of each page of the site here, i use [amiresponsive](https://ui.dev/amiresponsive) which allows me to grab an image of the site as it would be displayed on mobile, tablet and desktop, this helps to show the responsiveness of the site.
+#### Favicon
+Each page has a a favicon version of the TARDIS pin logo. This gives the website a professional look and reinforces the brand. 
+<img src="assets/images/screenshotfavicon.webp" width="600" alt="Screenshot of webpage address bar showing favicon">
 #### index.html
 
-#### Game.html
+#### Logo / Header
+Each page has a consistent header section containing the TARDIS pin logo and a stylised header with the name of the game <strong>Where in the Whoniverse?</strong>. The logo and the header both provide a link back to the homepage.
+<br>
+<img src="assets/images/screenshotheader.webp" width="600" alt="Screenshot of website header featuring a logo and a header">
 
-To enhance the thematic immersion, I replaced the default Leaflet marker with a custom TARDIS-pin SVG. I adjusted the iconAnchor properties to ensure the 'landing' point of the TARDIS correctly aligns with the user's geographic coordinates.
+#### Footer
+Each page has a simple but consistent footer which contains copyright information and a disclaimer that the website is not affiliated with BBC or Doctor Who. 
+<img src="assets/images/screenshotfooter.webp" width="600" alt="Screenshot of website footer">
+
+### Index.html
+The index / home page features the header, an image I created featuring a world map, a pin marker and a TARDIS followed by two clear buttons "Start Adventure" and "How to Play". The aim was to keep it simple, so users could quickly understand what to do. 
+<br>
+<br>
+<img src="assets/images/indexhtml.webp" width="600" align="center" alt="Am I responsive view of the homepage loading on a tablet, screen, phone">
+<br>
+
+* Start Adventure - Clicking the Start Adventure button will take the user to the game.html page. 
+* How to Play - Clicking the How To Play button will open up the modal which explains how to play the game. 
+<img src="assets/images/modalhowtoplay.webp" width="400" alt="Screenshot of popup modal of how to play">
+
+### Game.html
+The game page displays the following components:
+* The left hand grid (Taking up 2/3rds) - Map - which will always default to Bad Wolf Studios in Cardiff
+* The right hand grid (Taking up 1/3rd) 
+  * The location image - A randomised choice of 10 location images
+  * A score box which updates each round
+  * A round X of X box which updats each round
+  * A hint button which will provide a modal pop up with a hint to solve the location. 
+<br>
+<br>
+
+<img src="assets/images/gamehtml.webp" width="600" align="center" alt="Am I responsive view of the game page loading on a tablet, screen, phone">
+<br>
+
+#### The Map 
+<figure>
+    <img src="assets/images/gamemarkerpin.webp" width='150'
+         alt="Map marker pin shaped like the TARDIS">
+    <figcaption>This shows the TARDIS marker pin being placed at a location on the map</figcaption>
+</figure>
+To enhance the game immersion, I replaced the default Leaflet marker with a custom TARDIS-pin SVG. I adjusted the iconAnchor properties to ensure the 'landing' point of the TARDIS correctly aligns with the user's geographic coordinates.
+<br>
+<br>
+
+
+#### The Hint Modal
+The hint button takes the hint text from locations.json to display a line of text which will give the user additional help to find the location.
+<figure>
+    <img src="assets/images/gamehint.webp" width='400'
+         alt="The hint modal pop up offering extra help for solving the location">
+    <figcaption>The hint modal will pop up on click and give the user extra help to find the location</figcaption>
+</figure>
+<br>
+<br>
+
+
+#### The Submit Button
+The submit button has a built in check to ensure the user doesn't accidentally click submit before adding a marker on the map. If the user does submit before adding a marker the following modal will activate. 
+<figure>
+    <img src="assets/images/gamesubmiterror.webp" width='400'
+         alt="The error modal pop up if a user submits before adding a marker">
+    <figcaption>The error modal pop up if a user submits before adding a marker</figcaption>
+</figure>
+<br>
+<br>
+When a user clicks the submit button after placing a pin marker. A calculation based on the leaflet.js built in functionality will work out the distance between where they clicked and the co-ordinates provided in the locations.json file. It will then calculate a score and present these to the user, with an option to progress to the next round. 
+<figure>
+    <img src="assets/images/gamesubmit.webp" width='400'
+         alt="The submit modal will pop up once a user has successsfully submitted an answer">
+    <figcaption>The submit modal will provide feedback to the user on where the location is, how far away they were from it and how many points they are going to get.</figcaption>
+</figure>
 
 #### 404.html
+The 404 page acts as a seamless user experience, if a user were to navigate to a non existent URL instead of seeing a standard browswer error they will instead see a themed 404 page with a button navigating back to the index.html page. I implemented a CSS on hover effect with the TARDIS image just for "fun". I was thinking along the lines of the dinosaur game you get on browswers. Just a small bit of entertainment for the user.
+
+<img src="assets/images/404html.webp" width="600" align="center" alt="Am I responsive view of the 404 page loading on a tablet, screen, phone">
+
 
 ### Future Implementations
 
-* I initially wanted to build the project with a light/dark mode toggle. As part of my research into this, I stumbled across the global variables for the colour scheme. I soon found myself getting sidetracked and spending a lot of time on the toggle and couldn't quite get it right, so decided to shelf it for this project and add it as a future development.
+* I initially wanted to build the project with a light/dark mode toggle. As part of my research into this, I stumbled across using global variables for the colour scheme, which I have kept. I soon found myself getting sidetracked and spending a lot of time on the toggle and couldn't quite get it right, so decided to shelf it for this project and add it as a future development.
 
 * I would like to add the ability to save a players highest score for each game, and have a global leaderboard. I think this would encourage players to want to keep trying to get a higher score to reach the leaderboard.
 
