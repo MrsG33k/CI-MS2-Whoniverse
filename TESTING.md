@@ -11,7 +11,7 @@ You can view the deployed game here [Where in the Whoniverse?](https://mrsg33k.g
 
 ## CONTENTS
 
-* [AUTOMATED TESTING](#automated-testing)
+* [STATIC CODE ANALYSIS](#automated-testing)
   * [W3C Validator](#w3c-validator)
   * [JavaScript Validator](#javascript-validator)
   * [Lighthouse](#lighthouse)
@@ -20,13 +20,41 @@ You can view the deployed game here [Where in the Whoniverse?](https://mrsg33k.g
   * [Testing User Stories](#testing-user-stories)
   * [Full Testing](#full-testing)
 
-Testing was ongoing throughout the entire build. I utilised Chrome developer tools whilst building to pinpoint and troubleshoot any issues as I went along.
 
-I utilised the console in the developer tools to work through small sections of JavaScript and ensure that the code was working, and also to troubleshoot where issues were.
+
+## Testing Methodology & Strategy
+
+Testing was ongoing throughout the entire build. I utilised Chrome developer tools whilst building to pinpoint and troubleshoot any issues as I went along.
+To ensure project quality and cross-browser reliability, a testing strategy was established. Below is an explanation of the core testing paradigms considered, followed by the specific route chosen for this project and the rationale behind it.
+
+### 1. Understanding the Testing Paradigms
+
+*   **Automated Functional Testing (e.g., Jest):** This involves writing specialised test scripts that use a software framework to automatically execute and verify code logic. It runs JavaScript functions behind the scenes with simulated inputs to programmatically check if the outputs are mathematically and logically correct. 
+*   **Manual Functional Testing:** This relies on human interaction. The developer systematically clicks through the user interface, triggers modals, simulates user mistakes, and physically tests the application across various device screens to evaluate visual layout, responsiveness, and actual user experience.
+*   **Static Code Analysis:** This is an automated process where tools (like JSLint and the W3C HTML/CSS Validators) parse raw source code *without running it*. They act as a tool to catch syntax errors, missing tags, broken formatting etc.
+
+---
+
+### 2. My approach
+
+For this project, a two-pronged strategy was adopted:
+1.  **Static Code Analysis:** The codebase was put through the official W3C Markup Validation Service, the W3C CSS Validation Service, and JSLint. 
+2.  **Manual Testing:** Manual testing was executed, testing every button, map marker click, game reset, and modal popup across multiple viewports (Desktop, Tablet, Mobile) and browsers (Chrome, Safari, Firefox).
+
+---
+
+### 3. Why This Approach Was Chosen
+
+An automated testing framework like Jest was intentionally bypassed in favour of manual testing for the following reasons:
+
+*   **Heavy Reliance on Visual APIs:** The core of this application is built around the Leaflet.js mapping API and DOM manipulation. Automated unit tests excel at checking pure math or data functions, but they cannot effectively judge if a map layer rendered correctly on an iPhone screen or if a modal is visually overlapping a map marker.
+*   **User Experience (UX) Focus:** Because this is an interactive game, the "feel" of the gameplay—such as the map's zoom sensitivity, touch-target sizes on smaller screens, and screen-reader accessibility—required genuine human evaluation. 
+*   **Efficient Error Catching via Static Tools:** Utilising W3C validators and JSLint automated the process of checking code cleanliness and catching syntax bugs early, freeing up time to focus on device and multi-browser compatibility.
+
 
 - - -
 
-## AUTOMATED TESTING
+## STATIC CODE ANALYSIS
 
 ### W3C Validator
 
