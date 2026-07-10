@@ -11,14 +11,14 @@ You can view the deployed game here [Where in the Whoniverse?](https://mrsg33k.g
 
 ## CONTENTS
 
-* [STATIC CODE ANALYSIS](#automated-testing)
-  * [W3C Validator](#w3c-validator)
-  * [JavaScript Validator](#javascript-validator)
+* [STATIC CODE ANALYSIS](#static)
+  * [W3C Validator](#w3c)
+  * [JavaScript Validator](#javascript)
   * [Lighthouse](#lighthouse)
-  * [Accessible Web](#accessile-web)
-* [MANUAL TESTING](#manual-testing)
-  * [Testing User Stories](#testing-user-stories)
-  * [Full Testing](#full-testing)
+  * [Accessible Web](#accessile)
+* [MANUAL TESTING](#manual)
+  * [Testing User Stories](#testing)
+  * [Full Testing](#full)
 
 
 
