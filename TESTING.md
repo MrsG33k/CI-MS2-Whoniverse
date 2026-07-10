@@ -30,7 +30,7 @@ To ensure project quality and cross-browser reliability, a testing strategy was 
 ### 1. Understanding the Testing Paradigms
 
 *   **Automated Functional Testing (e.g., Jest):** This involves writing specialised test scripts that use a software framework to automatically execute and verify code logic. It runs JavaScript functions behind the scenes with simulated inputs to programmatically check if the outputs are mathematically and logically correct. 
-*   **Manual Functional Testing:** This relies on human interaction. The developer systematically clicks through the user interface, triggers modals, simulates user mistakes, and physically tests the application across various device screens to evaluate visual layout, responsiveness, and actual user experience.
+*   **Manual Testing:** This relies on human interaction. The developer systematically clicks through the user interface, triggers modals, simulates user mistakes, and physically tests the application across various device screens to evaluate visual layout, responsiveness, and actual user experience.
 *   **Static Code Analysis:** This is an automated process where tools (like JSLint and the W3C HTML/CSS Validators) parse raw source code *without running it*. They act as a tool to catch syntax errors, missing tags, broken formatting etc.
 
 ---
