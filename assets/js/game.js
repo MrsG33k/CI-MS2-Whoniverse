@@ -126,7 +126,7 @@ function initMap(){
 }
 //Create a custom pin marker based on the TARDIS pin
 var tardisIcon = L.icon ({
-    iconUrl: './assets/images/TARDISpin.svg',
+    iconUrl: './assets/images/tardispin.svg',
     iconSize: [40,60],
     iconAnchor: [20,60],
     popupAnchor: [0, -60]
